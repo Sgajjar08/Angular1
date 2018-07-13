@@ -8,11 +8,14 @@ import { ProductService } from '../product.service';
 })
 export class DetailsComponent implements OnInit {
 
-  public product = [];
+  product: any;
   constructor(private _productService: ProductService) { }
 
   ngOnInit() {
     this._productService.getProduct()
-      .subscribe(data => this.product = data);
+      .subscribe(resp => {
+        this.product = resp;
+        console.log(this.product);
+      });
   }
 }

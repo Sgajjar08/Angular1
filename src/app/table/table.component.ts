@@ -8,12 +8,15 @@ import { ProductService } from '../product.service';
 })
 export class TableComponent implements OnInit {
 
-  product = [];
+  product: any;
   constructor(private _productService: ProductService) { }
 
   ngOnInit() {
     this._productService.getProduct()
-      .subscribe(data => this.product =data);
+      .subscribe(resp => {
+        this.product = resp;
+        console.log(this.product);
+      });
   }
 
 }

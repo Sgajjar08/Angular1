@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 //import {  } from "native";
 
 import { TableComponent } from './table/table.component';
 import { ProductService } from "./product.service";
-//import { HttpClientModule } from '@angular/common/http';
 //import { DetailsComponent } from './details/details.component';
 /* import { RouterModule, Routes } from '@angular/router';
 
@@ -15,16 +15,16 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
-   
-    TableComponent,
-   
+    TableComponent
     //DetailsComponent
   ],
   imports: [
-    BrowserModule
-  
+    BrowserModule,
+    HttpModule
   ],
-  providers: [ProductService],
+  providers: [
+    ProductService
+  ],
   bootstrap: [TableComponent]
 })
 export class AppModule { }

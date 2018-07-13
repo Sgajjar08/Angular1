@@ -11,11 +11,10 @@
         </thead>
         <tbody>
             <tr *ngFor="let row of product">
-
-                <td class="column1">{{row[1]}}</td>
-                <td class="column2">iPhone X 64Gb Grey</td>
-                <td class="column3">1</td>
-                <td class="column4">$999.00</td>
+                <td class="column1">{{row.order_id}}</td>
+                <td class="column2">{{row.product_name}}</td>
+                <td class="column3">{{row.quantity}}</td>
+                <td class="column4">{{row.total}}</td>
             </tr>
 
 
