@@ -1,0 +1,24 @@
+<div class="table100">
+    <table>
+        <thead>
+            <tr class="table100-head">
+
+                <th class="column1">Order ID</th>
+                <th class="column2">Name</th>
+                <th class="column3">Quantity</th>
+                <th class="column4">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of product">
+
+                <td class="column1">{{row[1]}}</td>
+                <td class="column2">iPhone X 64Gb Grey</td>
+                <td class="column3">1</td>
+                <td class="column4">$999.00</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</div>

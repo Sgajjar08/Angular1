@@ -1,16 +1,30 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+//import {  } from "native";
 
-import { AppComponent } from './app.component';
+import { TableComponent } from './table/table.component';
+import { ProductService } from "./product.service";
+//import { HttpClientModule } from '@angular/common/http';
+//import { DetailsComponent } from './details/details.component';
+/* import { RouterModule, Routes } from '@angular/router';
+
+const appRoutes: Routes = [
+  { path: '', component:  },
+  { path: '', component:  },
+]; */
 
 @NgModule({
   declarations: [
-    AppComponent
+   
+    TableComponent,
+   
+    //DetailsComponent
   ],
   imports: [
     BrowserModule
+  
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [ProductService],
+  bootstrap: [TableComponent]
 })
 export class AppModule { }
