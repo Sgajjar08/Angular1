@@ -13,6 +13,6 @@ export class DetailsComponent implements OnInit {
 
   ngOnInit() {
     this._productService.getProduct()
-      .subscribe(data => this.product = data;
+      .subscribe(data => this.product = data);
   }
 }
